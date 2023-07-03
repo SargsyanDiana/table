@@ -1,38 +1,28 @@
 .App {
-  text-align: center;
+  @apply text-center
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+th, td {
+  @apply border border-white px-4 py-2 text-center
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  @apply appearance-none
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input[type=number] {
+  @apply appearance-none
 }
 
-.App-link {
-  color: #61dafb;
+textarea {
+  @apply resize-none
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input, textarea, select {
+  @apply text-center bg-yellow-main outline-none w-full h-full py-2
+}
+
+table {
+  @apply bg-yellow-main text-white
 }
